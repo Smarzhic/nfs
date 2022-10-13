@@ -37,18 +37,6 @@ nfs_foldes:
       become: true
 ```
 
-### Локальная проверка
-
-```bash
-[root][debian-test][/nfs]
-# mount -t nfs 127.0.0.1:/nfs/foo /mnt/
-mount.nfs: access denied by server while mounting 127.0.0.1:/nfs/foo
-[root][debian-test][/nfs]
-# mount -t nfs 127.0.0.1:/nfs/bar /mnt/
-[root][debian-test][/nfs]
-#
-```
-
 ### Порты для работы NFS
 
 [SecuringNFS](https://wiki.debian.org/SecuringNFS)
