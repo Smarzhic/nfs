@@ -1,7 +1,7 @@
 ---
 # tasks file for imbicile.nfs
 
-- name: create nds directory
+- name: create nfs directory
   file:
     path: "{{ item.path }}"
     state: directory
