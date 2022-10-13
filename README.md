@@ -12,7 +12,7 @@ Debian или Ubuntu
 nfs_foldes_create: true
 nfs_foldes:
   - path: "/nfs/foo"
-    address: "192.168.100.0/24"
+    address: "192.168.1.0/24"
     permissions: "(rw,sync,no_subtree_check)"
 ```
 
@@ -26,14 +26,12 @@ nfs_foldes:
     nfs_foldes_create: true
     nfs_foldes:
       - path: "/nfs/foo"
-        address: "192.168.100.0/24"
+        address: "192.168.1.0/24"
         permissions: "(rw,sync,no_subtree_check)"
-      - path: "/nfs/bar"
-        address: "*"
-        permissions: "(rw,sync,no_root_squash,no_subtree_check"
+
 
   roles:
-    - role: imbicile.nfs
+    - role: nfs
       become: true
 ```
 
