@@ -32,3 +32,9 @@
     name: nfs-kernel-server.service
     enabled: yes
     state: started
+
+- name: install rsync
+  apt:
+    name:
+      - rsync
+    state: present
